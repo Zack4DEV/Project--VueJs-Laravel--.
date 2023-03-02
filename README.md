@@ -1,7 +1,5 @@
-
-<div style="text-align: center;">![BookIng Hotels](/.github/ReadMe/img/preview-1.png "BookIng Hotels")</div>
-
 ![DashBoard](/.github/ReadMe/img/preview-2.png)
+
 ## Laravel-Vue.Js (Current: Laravel 8.* , Vue.Js: 3) ([Demo]())
 <br/>
 
