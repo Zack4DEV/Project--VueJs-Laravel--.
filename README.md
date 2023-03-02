@@ -1,45 +1,45 @@
-## Laravel Boilerplate (Current: Laravel 8.*) ([Demo](https://demo.laravel-boilerplate.com))
+## Laravel-Vue.Js (Current: Laravel 8.* , Vue.Js: 3) ([Demo]())
 
-[![Latest Stable Version](https://poser.pugx.org/rappasoft/laravel-boilerplate/v/stable)](https://packagist.org/packages/rappasoft/laravel-boilerplate)
-[![Latest Unstable Version](https://poser.pugx.org/rappasoft/laravel-boilerplate/v/unstable)](https://packagist.org/packages/rappasoft/laravel-boilerplate) 
+[![Latest Stable Version]()]()
+[![Latest Unstable Version]()]() 
 <br/>
-[![StyleCI](https://styleci.io/repos/30171828/shield?style=plastic)](https://github.styleci.io/repos/30171828)
-![Tests](https://github.com/rappasoft/laravel-boilerplate/workflows/Tests/badge.svg?branch=master)
+
+![Tests](https://github.com/Zack4DEV/Project--VueJs-Laravel--./tree/advanced/tests?branch=advanced)
 <br/>
-![GitHub contributors](https://img.shields.io/github/contributors/rappasoft/laravel-boilerplate.svg)
-![GitHub stars](https://img.shields.io/github/stars/rappasoft/laravel-boilerplate.svg?style=social)
 
 ### Demo Credentials
 
-**Admin:** admin@admin.com  
-**Password:** secret
+**Admin:** root@root.com  
+**Password:** root
 
 **User:** user@user.com  
-**Password:** secret
-
-### Official Documentation
-
-[Click here for the official documentation](http://laravel-boilerplate.com)
-
-### Slack Channel
-
-Please join us in our Slack channel to get faster responses to your questions. Get your invite here: https://laravel-5-boilerplate.herokuapp.com
+**Password:** user
 
 ### Introduction
 
-Laravel Boilerplate provides you with a massive head start on any size web application. Out of the box it has features like a backend built on CoreUI with Spatie/Permission authorization. It has a frontend scaffold built on Bootstrap 4. Other features such as Two Factor Authentication, User/Role management, searchable/sortable tables built on my [Laravel Livewire tables plugin](https://github.com/rappasoft/laravel-livewire-tables), user impersonation, timezone support, multi-lingual support with 20+ built in languages, demo mode, and much more.
+Vue.js is a progressive, incrementally-adoptable JavaScript framework for building UI on the web.
+<br/>
 
-### Issues
+Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects.
+<br/>
 
-If you come across any issues please [report them here](https://github.com/rappasoft/laravel-boilerplate/issues).
+### Used Technologies
 
-### Contributing
+#### ([Vite](https://vitejs.dev/guide/))
+About: Vite is a modern frontend build tool that provides an extremely fast development environment and bundles your code for production. When building applications with Laravel, you will typically use Vite to bundle your application's CSS and JavaScript files into production ready assets.
+<br/>
 
-Thank you for considering contributing to the Laravel Boilerplate project! Please feel free to make any pull requests, or e-mail me a feature request you would like to see in the future to Anthony Rappa at rappa819@gmail.com.
+Laravel integrates seamlessly with Vite by providing an official plugin and Blade directive to load your assets for development and production.
+<br/>
 
-### Security Vulnerabilities
+##### ([DataTables 2](https://datatables.net/manual/index))
 
-If you discover a security vulnerability within this boilerplate, please send an e-mail to Anthony Rappa at rappa819@gmail.com, or create a pull request if possible. All security vulnerabilities will be promptly addressed.
+<br/>
+
+About: DataTables is a plug-in for the jQuery Javascript library. It is a highly flexible tool, built upon the foundations of progressive enhancement, that adds all of these advanced features to any HTML table.
+<br/>
+
+([Scheme](https://github.com/Zack4DEV/Project--VueJs-Laravel--./blob/21c8b28f09d7b24c081f9c1debeaf2a4b5f519f8/.github/ReadMe/img/preview-3.jpeg))
 
 ### License
 
