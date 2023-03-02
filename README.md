@@ -6,8 +6,6 @@
 
 <br/>
 
-[Tests](https://github.com/Zack4DEV/Project--VueJs-Laravel--./tree/advanced/tests?branch=advanced)
-
 ### Demo Credentials
 
 **Admin:** root@root.com  
@@ -35,8 +33,8 @@ Laravel integrates seamlessly with Vite by providing an official plugin and Blad
 
 <br/>
 About: DataTables is a plug-in for the jQuery Javascript library. It is a highly flexible tool, built upon the foundations of progressive enhancement, that adds all of these advanced features to any HTML table.
-<br/>
 
+<br/>
 ![Scheme](.github/ReadMe/img/preview-3.jpeg)
 
 ### License
