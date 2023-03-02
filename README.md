@@ -1,15 +1,8 @@
-![DashBoard](/.github/ReadMe/img/preview-2.png)
-
+## =================================
 ## Laravel-Vue.Js (Current: Laravel 8.* , Vue.Js: 3) ([Demo]())
-<br/>
 
-### Demo Credentials
-**Admin:** root@root.com  
-**Password:** root
-
-**User:** user@user.com  
-**Password:** user
-
+![DashBoard](/.github/ReadMe/img/preview-2.png)
+## =================================
 ### Introduction
 Vue.js is a progressive, incrementally-adoptable JavaScript framework for building UI on the web.
 <br/>
@@ -22,6 +15,14 @@ Laravel integrates seamlessly with Vite by providing an official plugin and Blad
 ##### [DataTables 2](https://datatables.net/manual/index)
 <br/>
 About: DataTables is a plug-in for the jQuery Javascript library. It is a highly flexible tool, built upon the foundations of progressive enhancement, that adds all of these advanced features to any HTML table.
+
+## =================================
+### Demo Credentials
+**Admin:** root@root.com  
+**Password:** root
+
+**User:** user@user.com  
+**Password:** user
 
 ### License
 MIT: [http://anthony.mit-license.org](http://anthony.mit-license.org)
