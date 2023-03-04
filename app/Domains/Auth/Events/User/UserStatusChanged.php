@@ -12,21 +12,12 @@ class UserStatusChanged
 {
     use SerializesModels;
 
-    /**
-     * @var
-     */
     public $user;
 
-    /**
-     * @var
-     */
     public $status;
 
     /**
      * UserStatusChanged constructor.
-     *
-     * @param  User  $user
-     * @param $status
      */
     public function __construct(User $user, $status)
     {

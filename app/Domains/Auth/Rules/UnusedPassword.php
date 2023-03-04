@@ -12,17 +12,12 @@ use Illuminate\Support\Facades\Hash;
  */
 class UnusedPassword implements Rule
 {
-    /**
-     * @var
-     */
     protected $user;
 
     /**
      * Create a new rule instance.
      *
      * UnusedPassword constructor.
-     *
-     * @param $user
      */
     public function __construct($user)
     {
@@ -34,7 +29,6 @@ class UnusedPassword implements Rule
      *
      * @param  string  $attribute
      * @param  mixed  $value
-     * @return bool
      */
     public function passes($attribute, $value): bool
     {
@@ -72,8 +66,6 @@ class UnusedPassword implements Rule
 
     /**
      * Get the validation error message.
-     *
-     * @return string
      */
     public function message(): string
     {

@@ -8,7 +8,6 @@ namespace App\Domains\Auth\Models\Traits\Scope;
 trait PermissionScope
 {
     /**
-     * @param $query
      * @return mixed
      */
     public function scopeIsMaster($query)
@@ -18,7 +17,6 @@ trait PermissionScope
     }
 
     /**
-     * @param $query
      * @return mixed
      */
     public function scopeIsParent($query)
@@ -27,7 +25,6 @@ trait PermissionScope
     }
 
     /**
-     * @param $query
      * @return mixed
      */
     public function scopeIsChild($query)
@@ -36,7 +33,6 @@ trait PermissionScope
     }
 
     /**
-     * @param $query
      * @return mixed
      */
     public function scopeSingular($query)

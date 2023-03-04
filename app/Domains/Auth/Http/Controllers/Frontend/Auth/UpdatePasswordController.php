@@ -17,8 +17,6 @@ class UpdatePasswordController
 
     /**
      * ChangePasswordController constructor.
-     *
-     * @param  UserService  $userService
      */
     public function __construct(UserService $userService)
     {
@@ -26,7 +24,6 @@ class UpdatePasswordController
     }
 
     /**
-     * @param  UpdatePasswordRequest  $request
      * @return mixed
      *
      * @throws \Throwable

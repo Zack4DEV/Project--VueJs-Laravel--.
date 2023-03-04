@@ -13,9 +13,6 @@ use Rappasoft\LaravelLivewireTables\Views\Filter;
  */
 class UsersTable extends DataTableComponent
 {
-    /**
-     * @var
-     */
     public $status;
 
     /**
@@ -42,9 +39,6 @@ class UsersTable extends DataTableComponent
         $this->status = $status;
     }
 
-    /**
-     * @return Builder
-     */
     public function query(): Builder
     {
         $query = User::with('roles', 'twoFactorAuth')->withCount('twoFactorAuth');
@@ -64,9 +58,6 @@ class UsersTable extends DataTableComponent
             ->when($this->getFilter('verified'), fn ($query, $verified) => $verified === 'yes' ? $query->whereNotNull('email_verified_at') : $query->whereNull('email_verified_at'));
     }
 
-    /**
-     * @return array
-     */
     public function filters(): array
     {
         return [
@@ -91,9 +82,6 @@ class UsersTable extends DataTableComponent
         ];
     }
 
-    /**
-     * @return array
-     */
     public function columns(): array
     {
         return [
@@ -113,9 +101,6 @@ class UsersTable extends DataTableComponent
         ];
     }
 
-    /**
-     * @return string
-     */
     public function rowView(): string
     {
         return 'backend.auth.user.includes.row';

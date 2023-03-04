@@ -7,9 +7,6 @@ namespace App\Domains\Auth\Models\Traits\Attribute;
  */
 trait RoleAttribute
 {
-    /**
-     * @return string
-     */
     public function getPermissionsLabelAttribute(): string
     {
         if ($this->isAdmin()) {

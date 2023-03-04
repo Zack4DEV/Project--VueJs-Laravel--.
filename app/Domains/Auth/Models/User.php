@@ -40,6 +40,7 @@ class User extends Authenticatable implements MustVerifyEmail, TwoFactorAuthenti
         UserScope;
 
     public const TYPE_ADMIN = 'admin';
+
     public const TYPE_USER = 'user';
 
     /**
@@ -113,7 +114,6 @@ class User extends Authenticatable implements MustVerifyEmail, TwoFactorAuthenti
      * Send the password reset notification.
      *
      * @param  string  $token
-     * @return void
      */
     public function sendPasswordResetNotification($token): void
     {
@@ -132,7 +132,6 @@ class User extends Authenticatable implements MustVerifyEmail, TwoFactorAuthenti
      * Return true or false if the user can impersonate an other user.
      *
      * @param void
-     * @return bool
      */
     public function canImpersonate(): bool
     {
@@ -143,7 +142,6 @@ class User extends Authenticatable implements MustVerifyEmail, TwoFactorAuthenti
      * Return true or false if the user can be impersonate.
      *
      * @param void
-     * @return bool
      */
     public function canBeImpersonated(): bool
     {

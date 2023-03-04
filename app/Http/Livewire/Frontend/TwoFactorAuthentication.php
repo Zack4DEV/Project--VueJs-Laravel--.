@@ -10,13 +10,9 @@ use Livewire\Component;
  */
 class TwoFactorAuthentication extends Component
 {
-    /**
-     * @var
-     */
     public $code;
 
     /**
-     * @param  Request  $request
      * @return mixed
      */
     public function validateCode(Request $request)

@@ -12,9 +12,6 @@ use Rappasoft\LaravelLivewireTables\Views\Column;
  */
 class RolesTable extends DataTableComponent
 {
-    /**
-     * @return Builder
-     */
     public function query(): Builder
     {
         return Role::with('permissions:id,name,description')

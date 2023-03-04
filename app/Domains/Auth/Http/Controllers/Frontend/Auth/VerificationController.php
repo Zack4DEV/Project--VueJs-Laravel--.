@@ -36,7 +36,6 @@ class VerificationController
     /**
      * Show the email verification notice.
      *
-     * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
     public function show(Request $request)

@@ -13,8 +13,6 @@ class ComposerServiceProvider extends ServiceProvider
 {
     /**
      * Register bindings in the container.
-     *
-     * @param  AnnouncementService  $announcementService
      */
     public function boot(AnnouncementService $announcementService)
     {

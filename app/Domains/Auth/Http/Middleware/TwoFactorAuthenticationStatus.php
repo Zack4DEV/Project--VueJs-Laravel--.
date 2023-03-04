@@ -10,8 +10,6 @@ use Closure;
 class TwoFactorAuthenticationStatus
 {
     /**
-     * @param $request
-     * @param  Closure  $next
      * @param  string  $status
      * @return mixed
      */

@@ -11,9 +11,6 @@ use App\Domains\Auth\Events\Role\RoleUpdated;
  */
 class RoleEventListener
 {
-    /**
-     * @param $event
-     */
     public function onCreated($event)
     {
         activity('role')
@@ -28,9 +25,6 @@ class RoleEventListener
             ->log(':causer.name created role :subject.name with permissions: :properties.permissions');
     }
 
-    /**
-     * @param $event
-     */
     public function onUpdated($event)
     {
         activity('role')
@@ -45,9 +39,6 @@ class RoleEventListener
             ->log(':causer.name updated role :subject.name with permissions: :properties.permissions');
     }
 
-    /**
-     * @param $event
-     */
     public function onDeleted($event)
     {
         activity('role')

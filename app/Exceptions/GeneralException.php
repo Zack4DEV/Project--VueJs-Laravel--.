@@ -10,9 +10,6 @@ use Throwable;
  */
 class GeneralException extends Exception
 {
-    /**
-     * @var
-     */
     public $message;
 
     /**
@@ -20,7 +17,6 @@ class GeneralException extends Exception
      *
      * @param  string  $message
      * @param  int  $code
-     * @param  Throwable|null  $previous
      */
     public function __construct($message = '', $code = 0, Throwable $previous = null)
     {

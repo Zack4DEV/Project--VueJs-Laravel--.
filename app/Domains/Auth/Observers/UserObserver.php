@@ -9,17 +9,11 @@ use App\Domains\Auth\Models\User;
  */
 class UserObserver
 {
-    /**
-     * @param  User  $user
-     */
     public function created(User $user): void
     {
         $this->logPasswordHistory($user);
     }
 
-    /**
-     * @param  User  $user
-     */
     public function updated(User $user): void
     {
         // Only log password history on update if the password actually changed
@@ -28,9 +22,6 @@ class UserObserver
         }
     }
 
-    /**
-     * @param  User  $user
-     */
     private function logPasswordHistory(User $user): void
     {
         if (config('boilerplate.access.user.password_history')) {

@@ -22,8 +22,6 @@ class UserService extends BaseService
 {
     /**
      * UserService constructor.
-     *
-     * @param  User  $user
      */
     public function __construct(User $user)
     {
@@ -31,7 +29,6 @@ class UserService extends BaseService
     }
 
     /**
-     * @param $type
      * @param  bool|int  $perPage
      * @return mixed
      */
@@ -45,7 +42,6 @@ class UserService extends BaseService
     }
 
     /**
-     * @param  array  $data
      * @return mixed
      *
      * @throws GeneralException
@@ -68,8 +64,6 @@ class UserService extends BaseService
     }
 
     /**
-     * @param $info
-     * @param $provider
      * @return mixed
      *
      * @throws GeneralException
@@ -102,9 +96,6 @@ class UserService extends BaseService
     }
 
     /**
-     * @param  array  $data
-     * @return User
-     *
      * @throws GeneralException
      * @throws \Throwable
      */
@@ -146,10 +137,6 @@ class UserService extends BaseService
     }
 
     /**
-     * @param  User  $user
-     * @param  array  $data
-     * @return User
-     *
      * @throws \Throwable
      */
     public function update(User $user, array $data = []): User
@@ -184,11 +171,6 @@ class UserService extends BaseService
         return $user;
     }
 
-    /**
-     * @param  User  $user
-     * @param  array  $data
-     * @return User
-     */
     public function updateProfile(User $user, array $data = []): User
     {
         $user->name = $data['name'] ?? null;
@@ -204,10 +186,7 @@ class UserService extends BaseService
     }
 
     /**
-     * @param  User  $user
-     * @param $data
      * @param  bool  $expired
-     * @return User
      *
      * @throws \Throwable
      */
@@ -231,10 +210,6 @@ class UserService extends BaseService
     }
 
     /**
-     * @param  User  $user
-     * @param $status
-     * @return User
-     *
      * @throws GeneralException
      */
     public function mark(User $user, $status): User
@@ -259,9 +234,6 @@ class UserService extends BaseService
     }
 
     /**
-     * @param  User  $user
-     * @return User
-     *
      * @throws GeneralException
      */
     public function delete(User $user): User
@@ -280,9 +252,6 @@ class UserService extends BaseService
     }
 
     /**
-     * @param  User  $user
-     * @return User
-     *
      * @throws GeneralException
      */
     public function restore(User $user): User
@@ -297,9 +266,6 @@ class UserService extends BaseService
     }
 
     /**
-     * @param  User  $user
-     * @return bool
-     *
      * @throws GeneralException
      */
     public function destroy(User $user): bool
@@ -313,10 +279,6 @@ class UserService extends BaseService
         throw new GeneralException(__('There was a problem permanently deleting this user. Please try again.'));
     }
 
-    /**
-     * @param  array  $data
-     * @return User
-     */
     protected function createUser(array $data = []): User
     {
         return $this->model::create([

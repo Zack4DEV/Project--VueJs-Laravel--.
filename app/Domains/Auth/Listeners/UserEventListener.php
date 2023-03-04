@@ -16,9 +16,6 @@ use Illuminate\Auth\Events\PasswordReset;
  */
 class UserEventListener
 {
-    /**
-     * @param $event
-     */
     public function onLoggedIn($event)
     {
         // Update the logging in users time & IP
@@ -28,9 +25,6 @@ class UserEventListener
         ]);
     }
 
-    /**
-     * @param $event
-     */
     public function onPasswordReset($event)
     {
         $event->user->update([
@@ -38,9 +32,6 @@ class UserEventListener
         ]);
     }
 
-    /**
-     * @param $event
-     */
     public function onCreated($event)
     {
         activity('user')
@@ -59,9 +50,6 @@ class UserEventListener
             ->log(':causer.name created user :subject.name with roles: :properties.roles and permissions: :properties.permissions');
     }
 
-    /**
-     * @param $event
-     */
     public function onUpdated($event)
     {
         activity('user')
@@ -78,9 +66,6 @@ class UserEventListener
             ->log(':causer.name updated user :subject.name with roles: :properties.roles and permissions: :properties.permissions');
     }
 
-    /**
-     * @param $event
-     */
     public function onDeleted($event)
     {
         activity('user')
@@ -88,9 +73,6 @@ class UserEventListener
             ->log(':causer.name deleted user :subject.name');
     }
 
-    /**
-     * @param $event
-     */
     public function onRestored($event)
     {
         activity('user')
@@ -98,9 +80,6 @@ class UserEventListener
             ->log(':causer.name restored user :subject.name');
     }
 
-    /**
-     * @param $event
-     */
     public function onDestroyed($event)
     {
         activity('user')
@@ -108,9 +87,6 @@ class UserEventListener
             ->log(':causer.name permanently deleted user :subject.name');
     }
 
-    /**
-     * @param $event
-     */
     public function onStatusChanged($event)
     {
         activity('user')

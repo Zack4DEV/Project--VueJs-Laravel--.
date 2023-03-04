@@ -50,7 +50,6 @@ class LoginController
     /**
      * Validate the user login request.
      *
-     * @param  \Illuminate\Http\Request  $request
      * @return void
      *
      * @throws \Illuminate\Validation\ValidationException
@@ -72,7 +71,6 @@ class LoginController
      *
      * Attempt to log the user into the application.
      *
-     * @param  \Illuminate\Http\Request  $request
      * @return bool
      */
     protected function attemptLogin(Request $request)
@@ -92,8 +90,6 @@ class LoginController
     /**
      * The user has been authenticated.
      *
-     * @param  Request  $request
-     * @param $user
      * @return mixed
      */
     protected function authenticated(Request $request, $user)

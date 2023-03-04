@@ -10,8 +10,6 @@ use Closure;
 class ToBeLoggedOut
 {
     /**
-     * @param  $request
-     * @param  Closure  $next
      * @return \Illuminate\Http\RedirectResponse|mixed
      */
     public function handle($request, Closure $next)

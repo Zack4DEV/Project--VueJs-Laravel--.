@@ -142,7 +142,6 @@ abstract class BaseService
     /**
      * Get the specified model record from the database.
      *
-     * @param $id
      * @return \Illuminate\Database\Eloquent\Model
      */
     public function getById($id)
@@ -155,9 +154,6 @@ abstract class BaseService
     }
 
     /**
-     * @param $item
-     * @param $column
-     * @param  array  $columns
      * @return \Illuminate\Database\Eloquent\Builder|\Illuminate\Database\Eloquent\Model|object|null
      */
     public function getByColumn($item, $column, array $columns = ['*'])
@@ -172,7 +168,6 @@ abstract class BaseService
     /**
      * Delete the specified model record from the database.
      *
-     * @param $id
      * @return bool|null
      *
      * @throws \Exception
@@ -213,7 +208,6 @@ abstract class BaseService
 
     /**
      * @param  int  $limit
-     * @param  array  $columns
      * @param  string  $pageName
      * @param  null  $page
      * @return \Illuminate\Contracts\Pagination\LengthAwarePaginator
@@ -263,7 +257,6 @@ abstract class BaseService
     /**
      * Set Eloquent relationships to eager load.
      *
-     * @param $relations
      * @return $this
      */
     public function with($relations)

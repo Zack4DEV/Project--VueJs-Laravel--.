@@ -31,5 +31,9 @@
         "vue": "^2.5.17",
         "vue-loader": "^15.9.5",
         "vue-template-compiler": "^2.6.10"
+    },
+    "dependencies": {
+        "artisan": "^0.1.2",
+        "php": "^1.0.2"
     }
 }

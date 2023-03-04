@@ -19,8 +19,6 @@ class UserPasswordController
 
     /**
      * UserPasswordController constructor.
-     *
-     * @param  UserService  $userService
      */
     public function __construct(UserService $userService)
     {
@@ -28,8 +26,6 @@ class UserPasswordController
     }
 
     /**
-     * @param  EditUserPasswordRequest  $request
-     * @param  User  $user
      * @return mixed
      */
     public function edit(EditUserPasswordRequest $request, User $user)
@@ -39,8 +35,6 @@ class UserPasswordController
     }
 
     /**
-     * @param  UpdateUserPasswordRequest  $request
-     * @param  User  $user
      * @return mixed
      *
      * @throws \Throwable
