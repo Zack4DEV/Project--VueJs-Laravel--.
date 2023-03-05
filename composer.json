@@ -1,11 +1,11 @@
 {
-    "name": "Zack4Dev/Project--VueJs-Laravel--.",
+    "name": "project/laravel-vuex",
     "type": "project",
-    "description": "The Laravel + Vue.Js Project.",
+    "description": "The Laravel,Vue.Js Project",
     "keywords": [
         "framework",
-        "laravel",
-        "boilerplate"
+        "boilerplate",
+        "template"
     ],
     "license": "MIT",
     "require": {
@@ -56,10 +56,6 @@
         }
     },
     "scripts": {
-        "post-autoload-dump": [
-            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
-            "@php artisan package:discover --ansi"
-        ],
         "post-update-cmd": [
             "@php artisan vendor:publish --tag=laravel-assets --ansi",
             "@php artisan ide-helper:generate",
@@ -71,6 +67,23 @@
         "post-create-project-cmd": [
             "@php artisan key:generate --ansi"
         ],
+        "post-autoload-dump": [
+            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+            "@php artisan package:discover --ansi"
+        ],
+        "test": "@php artisan test --parallel",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage",
+        "key:generate": "php artisan key:generate && php artisan key:generate --env=testing",
+        "permissions": "chgrp -R www-data storage bootstrap/cache && chmod -R ug+rwx storage bootstrap/cache",
+        "start": [
+            "@composer run env:copy",
+            "@composer install -n --prefer-dist",
+            "@composer run key:generate",
+            "@php artisan vue-i18n:generate",
+            "@php artisan migrate --seed",
+            "@composer run permissions"
+        ],
+        "format": "vendor/bin/php-cs-fixer fix --allow-risky=yes",
         "clear-all": [
             "@php artisan clear-compiled",
             "@php artisan cache:clear",
@@ -86,10 +99,7 @@
         "reset": [
             "composer clear-all",
             "composer cache-all"
-        ],
-        "test": "@php artisan test --parallel",
-        "test-coverage": "vendor/bin/phpunit --coverage-html coverage",
-        "format": "vendor/bin/php-cs-fixer fix --allow-risky=yes"
+        ]
     },
     "extra": {
         "laravel": {
@@ -99,7 +109,11 @@
     "config": {
         "optimize-autoloader": true,
         "preferred-install": "dist",
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "treeware/plant": true,
+            "php-http/discovery": true
+        }
     },
     "minimum-stability": "dev",
     "prefer-stable": true
